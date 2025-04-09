@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage Section -->
+    <section id="home" class="intro">
+        <h1>Welcome to Build Your Website</h1>
+        <p>Your one-stop solution for custom, responsive websites.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Custom Web Design</h3>
+            <p>We offer tailored websites for all kinds of businesses.</p>
+        </div>
+        <div class="service">
+            <h3>SEO Optimization</h3>
+            <p>Make your website more discoverable with our SEO services.</p>
+        </div>
+        <div class="service">
+            <h3>Responsive Design</h3>
+            <p>Your website will look great on any device!</p>
+        </div>
+
+        <!-- Pricing Table -->
+        <div class="pricing">
+            <h3>Choose Your Plan</h3>
+            <div class="pricing-table">
+                <div class="pricing-option" id="basic">
+                    <h4>Basic</h4>
+                    <p>$199</p>
+                    <button onclick="updatePrice('199')">Select</button>
+                </div>
+                <div class="pricing-option" id="standard">
+                    <h4>Standard</h4>
+                    <p>$499</p>
+                    <button onclick="updatePrice('499')">Select</button>
+                </div>
+                <div class="pricing-option" id="premium">
+                    <h4>Premium</h4>
+                    <p>$999</p>
+                    <button onclick="updatePrice('999')">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <p>Project 1 - Custom Web Design</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <p>Project 2 - SEO Optimized</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="Project 3">
+                <p>Project 3 - Responsive Design</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Build Your Website</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
